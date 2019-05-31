@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Сложение чисел</title>
+    <script type = "text/javascript" src = "script.js"></script>
+  </head>
+  <body>
+    <form name = "form1" action="#">
+      <h2>Сложение  чисел</h2>
+
+      <label>Первое число:</label>
+      <input type="text"  name='arg1'>
+      <br />
+      <br />
+
+      <label>Второе число:</label>
+      <input type="text" name='arg2'>
+      <br />
+      <br />
+
+      <input type="button" value="Вычислить" onclick="add(arg1.value, arg2.value)">
+
+      <p><span id="result_multi"></span></p>
+    </form>
+
+<script>
+
+// Сложение чисел
+function add(a, b) {
+  let x1 = parseFloat(a),	
+      x2 = parseFloat(b);	
+	
+  if (!parseInt(x1)||!parseInt(x2)) {
+    alert('Нужно писать число!');
+  } else {
+    let result = x1 + x2;
+    alert('Результат: '+ result);
+  }
+}
+
+</script>
+
+</body>
+</html>
