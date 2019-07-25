@@ -27,14 +27,14 @@
 
 // Сложение чисел
 function add(a, b) {
-  let x1 = parseFloat(a),	
-      x2 = parseFloat(b);	
+	let x1 = parseFloat(a),	
+        x2 = parseFloat(b);
 	
-  if (!parseInt(x1)||!parseInt(x2)) {
+  if (!parseFloat(x1)||!parseFloat(x2)) {
     alert('Нужно писать число!');
   } else {
     let result = x1 + x2;
-    alert('Результат: '+ result);
+    alert('Результат: '+ result.toFixed(1));
   }
 }
 
